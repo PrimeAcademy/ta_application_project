@@ -1,0 +1,33 @@
+<h1>hero entry!!</h1>
+<h2>Select a power and enter a hero profile!</h2>
+<form>
+    <select ng-model="power_name">
+        <option value="invisibility">Invisibility</option>
+        <option value="flight">Flight</option>
+        <option value="super_speed">Super Speed</option>
+        <option value="heat_vision">Heat Vision</option>
+        <option value="super_strength">Super Strength</option>
+        <option value="accelerated_healing">Accelerated Healing</option>
+        <option value="power_blast">Power Blast</option>
+        <option value="animal_affinity">Animal Affinity</option>
+    </select>
+</form>
+
+
+
+<form class="form-group">
+    <label for="alias">Alias</label>
+    <input type="text" ng-model="alias" id="alias" />
+
+    <label for="first_name">First Name</label>
+    <input type="text" ng-model="first_name" id="first_name" />
+
+    <label for="last_name">Last name</label>
+    <input type="text" ng-model="last_name" id="last_name" />
+
+    <label for="city">city</label>
+    <input type="text" ng-model="city" id="city" />
+
+
+    <button id="submit-button" ng-click="submitHero(heroObject)">Submit this hero!</button>
+</form>

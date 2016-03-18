@@ -1,0 +1,30 @@
+<h1>hero listing!</h1>
+
+<form>
+    <select ng-model="power_name">
+        <option value="invisibility">Invisibility</option>
+        <option value="flight">Flight</option>
+        <option value="super_speed">Super Speed</option>
+        <option value="heat_vision">Heat Vision</option>
+        <option value="super_strength">Super Strength</option>
+        <option value="accelerated_healing">Accelerated Healing</option>
+        <option value="power_blast">Power Blast</option>
+        <option value="animal_affinity">Animal Affinity</option>
+    </select>
+
+    <button id="sort" ng-click="sortHeroes()">Sort heroes by power!</button>
+</form>
+
+
+<div ng-repeat="hero in heroes">
+    <p>{{hero.alias}}</p>
+    <p>{{hero.first_name}}</p>
+
+    <p>{{hero.last_name}}</p>
+
+    <p>{{hero.city}}</p>
+
+    <p>{{hero.power_name}}</p>
+
+</div>
+
